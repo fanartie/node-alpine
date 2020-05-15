@@ -12,5 +12,6 @@ RUN apk --no-cache --virtual build-dependencies add \
     && npm install \
     && apk del build-dependencies
     
-RUN npm config set python /usr/lib/python27
- 
+#RUN npm config set python /usr/lib/python27
+
+RUN npm config set python $(which python)
