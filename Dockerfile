@@ -12,4 +12,4 @@ RUN apk --no-cache --virtual build-dependencies add \
     && npm install \
     && apk del build-dependencies
     
-    
+RUN npm config set python python2.7    
